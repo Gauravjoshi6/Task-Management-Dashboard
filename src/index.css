@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for the whole dashboard */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Task Form Styles */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4a5568;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3182ce;
+}
+
+.form-group button {
+  background-color: #3182ce;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Task Item Styles */
+.task-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.task-item p {
+  color: #4a5568;
+}
+
+.task-item .status {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.task-item .complete-btn,
+.task-item .delete-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.task-item .complete-btn {
+  background-color: #48bb78;
+  color: white;
+}
+
+.task-item .complete-btn:hover {
+  background-color: #38a169;
+}
+
+.task-item .delete-btn {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.task-item .delete-btn:hover {
+  background-color: #c53030;
+}
+
+.task-item .actions {
+  display: flex;
+  gap: 10px;
+}
